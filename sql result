@@ -1,0 +1,106 @@
+
+Table BILL dropped.
+
+
+Table PATIENT dropped.
+
+
+Table ROOM dropped.
+
+
+Table DOCTOR dropped.
+
+
+Table DOCTOR created.
+
+
+Table ROOM created.
+
+
+Table PATIENT created.
+
+
+Table BILL created.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+Sequence BILL_NO_SEQ dropped.
+
+
+Sequence BILL_NO_SEQ created.
+
+
+Trigger BILL_TRG compiled
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+1 row inserted.
+
+
+3 rows updated.
+
+
+3 rows updated.
+
+
+3 rows updated.
+
+
+D_NAME               D_ID                 ADDRESS                                            PHONE_NUMBER DOC_DESIGNATION      GENDER              
+-------------------- -------------------- -------------------------------------------------- ------------ -------------------- --------------------
+Dr.Rohit             D001                 H1/10, Hauz Khas, New Delhi, Delhi                   8878988955 Cardiologist         Male                
+Dr.Tarun             D002                 94/4,Gurugram, Haryana 122001                        7778988955 Allergist            Male                
+Dr.Shivani           D003                 Sector 14, Gurugram, Haryana                         8854346756 Oral Surgeon         Female              
+
+
+ROOM_ ROOM_TYPE            ROOM_CHARGES
+----- -------------------- ------------
+R001  Private                      1000
+R002  Private                      1000
+R003  General                       500
+
+
+P_ID       P_NAME                    P_AGE P_GENDER   P_ADDRESS                                          D_ID                 DATE_ADM PHONE_NUMBER ROOM_
+---------- -------------------- ---------- ---------- -------------------------------------------------- -------------------- -------- ------------ -----
+P001       Raghav                       17 Male       Agra                                               D001                 17-04-21   9965467889 R001 
+P002       Manish                       25 Male       Surat                                              D002                 10-01-20   5467890767 R002 
+P003       John                         45 Female     Mumbai                                             D003                 10-12-20   7765478908 R003 
+
+
+BILL_NO    BILL_DAT P_NAME               P_ID       P_GENDER   P_ADDRESS                                          D_NAME               DATE_ADM DATE_DIS DAYS_ADMITTED ROOM_CHARGES PATHOLOGY_FEES     D_FEES MISCELLANEOUS TOTAL_AMOUNT
+---------- -------- -------------------- ---------- ---------- -------------------------------------------------- -------------------- -------- -------- ------------- ------------ -------------- ---------- ------------- ------------
+1          17-10-22 Raghav               P001       Male       Agra                                               Dr.Rohit             17-04-21 30-04-21            13        13000            300        500           100        13900
+2          17-10-22 Manish               P002       Male       Surat                                              Dr.Tarun             10-01-20 15-01-20             5         5000            500        500           100         6100
+3          17-10-22 John                 P003       Female     Mumbai                                             Dr.Shivani           10-12-20 25-12-20            15         7500            250        500           100         8350
+
